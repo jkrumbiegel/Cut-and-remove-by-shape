@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Cut and remove by shape</name>
+  <id>org.inkscape.juliuskrumbiegel.cut_and_remove_by_shape</id>
+  
+  <param name="keep_paths" type="optiongroup" _gui-text="Keep paths">
+    <option value="inside">inside of shape</option>
+    <option value="outside">outside of shape</option>
+  </param>
+
+  <effect>
+    <effects-menu>
+      <submenu name="Pen Plotter Tools"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command location="inx" interpreter="python">cut_and_remove_by_shape.py</command>
+  </script>
+</inkscape-extension>
